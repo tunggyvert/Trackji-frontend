@@ -6,6 +6,7 @@ Frontend baseline for Trackji built with Vite, React, TypeScript, Redux Toolkit,
 
 - Vite for the dev server and production build
 - React 19 + TypeScript
+- Tailwind CSS v4 for styling
 - Redux Toolkit for predictable application state
 - React Router for route composition
 - Vitest + Testing Library for unit and UI tests
