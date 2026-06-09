@@ -29,6 +29,23 @@ Open the local Vite URL shown in the terminal.
 - `pnpm test` runs the test suite once
 - `pnpm test:watch` runs Vitest in watch mode
 
+## Docker
+
+Build and run the production container with Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+The app is served by Nginx at `http://localhost:8080`.
+
+Build the image directly:
+
+```bash
+docker build -t trackji-frontend .
+docker run --rm -p 8080:80 trackji-frontend
+```
+
 ## Project Structure
 
 ```text
@@ -79,4 +96,3 @@ src/
 - UI rendering tests live close to the app or feature under test.
 - Pure reducer and selector tests should stay next to the feature module.
 - `src/test/setup.ts` centralizes Testing Library setup.
-

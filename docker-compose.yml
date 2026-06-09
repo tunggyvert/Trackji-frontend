@@ -1,0 +1,10 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: trackji-frontend:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
